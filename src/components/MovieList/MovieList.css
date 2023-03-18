@@ -1,0 +1,15 @@
+.movie-list {
+  display: flex;
+  width: 1010px;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.load-movies {
+  position: fixed;
+  top: 40%;
+}
