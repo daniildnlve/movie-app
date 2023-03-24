@@ -13,3 +13,9 @@
   position: fixed;
   top: 40%;
 }
+
+@media (max-width: 768px) {
+  .movie-list {
+    width: 388px;
+  }
+}

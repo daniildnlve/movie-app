@@ -1,4 +1,4 @@
-import { Alert, Space } from 'antd';
+import { Alert, Space } from 'antd'
 const ErrorLoad = () => (
   <Space
     direction="vertical"
@@ -6,12 +6,7 @@ const ErrorLoad = () => (
       width: '100%',
     }}
   >
-    <Alert
-      message="Error"
-      description="Failed to load data"
-      type="error"
-      showIcon
-    />
+    <Alert message="Error" description="Failed to load data" type="error" showIcon />
   </Space>
-);
-export default ErrorLoad;
+)
+export default ErrorLoad

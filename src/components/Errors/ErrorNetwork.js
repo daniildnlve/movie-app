@@ -1,19 +1,13 @@
-import { Alert, Space } from 'antd';
+import { Alert, Space } from 'antd'
 const ErrorNetwork = () => (
   <Space
-    
     direction="vertical"
     style={{
       width: '50%',
-      marginTop: '50px'
+      paddingTop: '50px',
     }}
   >
-    <Alert
-      message="Error"
-      description="No internet connection"
-      type="error"
-      showIcon
-    />
+    <Alert message="Error" description="No internet connection" type="error" showIcon />
   </Space>
-);
-export default ErrorNetwork;
+)
+export default ErrorNetwork

@@ -1,5 +1,5 @@
-import { LoadingOutlined } from '@ant-design/icons';
-import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons'
+import { Spin } from 'antd'
 
 const antIcon = (
   <LoadingOutlined
@@ -8,7 +8,7 @@ const antIcon = (
     }}
     spin
   />
-);
+)
 
-const Spinner = () => <Spin className='load-movies' indicator={antIcon} />;
-export default Spinner;
+const Spinner = () => <Spin className="load-movies" indicator={antIcon} />
+export default Spinner
