@@ -20,7 +20,7 @@ export default class Movie extends Component {
     genreIds: PropTypes.array,
     sessionId: PropTypes.string,
     movieService: PropTypes.object,
-    movieId: PropTypes.string,
+    movieId: PropTypes.number,
   }
 
   render() {
@@ -36,13 +36,10 @@ export default class Movie extends Component {
 
     const onRated = (val) => {
       if (val === 0) {
-        return movieService.delRating(movieId, sessionId).then((e) => console.log(e))
+        return movieService.delRating(movieId, sessionId)
       } else {
         localStorage.setItem(movieId, val)
-        return movieService
-          .rateMovie(movieId, sessionId, val)
-          .then((e) => console.log(e))
-          .then((e) => console.log(e))
+        return movieService.rateMovie(movieId, sessionId, val)
       }
     }
 

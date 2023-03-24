@@ -79,7 +79,6 @@ export default class MovieList extends Component {
             })
             return
           }
-          console.log(items)
           if (items.total_results > 10000) {
             items.total_results = 10000
           }
@@ -104,7 +103,6 @@ export default class MovieList extends Component {
             })
             return
           }
-          console.log(items)
           this.setState({
             movies: items.results,
             isLoading: false,
